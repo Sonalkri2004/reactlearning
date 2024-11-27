@@ -37,7 +37,7 @@ const [data, setData] = useState([]);
   return (
      
     <div className='p-10'>
-        <button  onClick={getData}  className='bg-cyan-400 text-black font-semibold text-2xl px-6 py-3 rounded active:scale-90'>Get Data</button>
+        {/* <button  onClick={getData}  className='bg-cyan-400 text-black font-semibold text-2xl px-6 py-3 rounded active:scale-90'>Get Data</button> */}
         <div className='p-5 mt-5 bg-black'>
               {
                 data.map(function (elem,idx){
