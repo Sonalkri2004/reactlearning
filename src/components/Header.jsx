@@ -17,13 +17,16 @@
 // export default Card
 
 
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { DataContext } from '../context/Usercontext'
+
 
 const Header = () => {
+    const data= useContext(DataContext)
   return (
     <div className='py-7 px-10 bg-emerald-500 text-white flex items-center justify-between'>
-        <h2 className='text-2xl'>React</h2>
+        <h2 className='text-2xl'>React {data}</h2>
 
         <div className='flex gap-10'>
 

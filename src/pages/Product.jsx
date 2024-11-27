@@ -23,7 +23,7 @@ const [data, setData] = useState([]);
 
   const getData = async ()=>{
 
-    const response= await axios.get('https://picsum.photos/v2/list?page=2&limit=100');
+    const response= await axios.get('https://picsum.photos/v2/list?page=2&limit=10');
     setData(response.data);
     // console.log(data);
   }

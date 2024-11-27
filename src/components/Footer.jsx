@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import UserContext, { DataContext } from '../context/Usercontext';
 
 const Footer = () => {
+    const data= useContext(DataContext)
   return (
-    <footer className="bg-gray-900 text-white py-1">
+    <footer className="bg-gray-900 text-white py-1 ">
       <div className="container mx-auto px-4 md:px-8 flex flex-wrap justify-between gap-6">
         {/* Footer Brand or Title */}
         <div>
-          <h2 className="text-2xl font-bold mb-2">ReactApp</h2>
+          <h2 className="text-2xl font-bold mb-2">ReactApp {data} platform</h2>
           <p className="text-gray-400 text-sm">
             Building awesome projects with React.
           </p>
